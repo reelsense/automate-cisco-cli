@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>groupInfo</key>
+	<dict>
+		<key>expandAfterMode</key>
+		<integer>0</integer>
+		<key>groupName</key>
+		<string>Set Time</string>
+	</dict>
+	<key>snippetsTE2</key>
+	<array>
+		<dict>
+			<key>abbreviation</key>
+			<string>;settime</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-10-20T11:38:36Z</date>
+			<key>extraInfo</key>
+			<dict/>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Set Time</string>
+			<key>modificationDate</key>
+			<date>2015-10-20T11:43:59Z</date>
+			<key>plainText</key>
+			<string>configure terminal%key:return%
+clock timezone PST -8
+clock %fillpopup:name=Daylight Savings Time:default=summer-time:winter-time% PST recurring%key:return%
+end%key:return%
+clock set %@+1h:%@+1m:%@+1s%key:return%
+timestamps log datetime local time show-timezone%key:return%
+end%key:return%
+</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>CBDC82EE-3E5A-411F-B4E4-931BDE6E4D27</string>
+		</dict>
+	</array>
+</dict>
+</plist>
