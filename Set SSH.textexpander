@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>groupInfo</key>
+	<dict>
+		<key>expandAfterMode</key>
+		<integer>0</integer>
+		<key>groupName</key>
+		<string>Set SSH</string>
+	</dict>
+	<key>snippetsTE2</key>
+	<array>
+		<dict>
+			<key>abbreviation</key>
+			<string>;setssh</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-10-20T10:53:38Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Set SSH</string>
+			<key>modificationDate</key>
+			<date>2015-10-20T11:45:45Z</date>
+			<key>plainText</key>
+			<string>configure terminal%key:return%
+ip domain-name EXAMPLE.com%key:return%
+aaa new model%key:return%
+username admin priv 15 secret EXAMPLEPASS%key:return%
+crypto key gen rsa%key:return%
+2048%key:return%
+do show logging%key:return%
+line vty 0 15%key:return%
+login local%key:return%
+transport input ssh%key:return%
+end%key:return%
+configure terminal%key:return%
+line vty 0 15%key:return%
+exec-timeout 5 30%key:return%
+exit%key:return%
+line con 0%key:return%
+exec-timeout 5 30%key:return%
+end%key:return%</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>53123FFD-1A85-4308-AE67-A1747FAA92CD</string>
+		</dict>
+	</array>
+</dict>
+</plist>
